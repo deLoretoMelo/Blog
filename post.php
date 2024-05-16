@@ -18,7 +18,7 @@
     <div class="content-container">
         <h1 id="main-title"><?= $currentPost['title'] ?></h1>
         <p id="post-description"><?= $currentPost['description'] ?></p>
-        <div class="tags-container">
+        <div class="img-container">
             <img src="<?= $BASE_URL ?>/imgs/<?= $currentPost['img'] ?>" alt="<?= $currentPost['title'] ?>">
         </div>
         <p class="post-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium molestias nulla accusamus quo, vero omnis doloremque excepturi debitis asperiores quas dolores doloribus minus dignissimos quisquam deleniti quod minima, similique eveniet.
@@ -27,8 +27,7 @@
         Dignissimos optio culpa libero eos odio perspiciatis mollitia temporibus quia? Ipsa quod hic nostrum, voluptatibus, fuga consequatur perferendis quidem saepe nesciunt eligendi culpa illo recusandae quis excepturi dolore atque. Harum.
         Provident officia accusantium perspiciatis ipsam facilis, nobis minus earum qui? Amet deleniti mollitia officia fugiat, eius animi minima illo quam voluptas explicabo saepe et accusantium at, iusto similique molestias. Pariatur?</p>
     </div>
-</main>
-<aside id="nav-container">
+    <aside id="nav-container">
     <h3 id="tags-title">Tags</h3>
     <ul id="tags-list">
         <?php foreach($currentPost['tags'] as $tag): ?>
@@ -41,7 +40,9 @@
             <li><a href="#"><?= $category ?></a></li>
         <?php endforeach; ?>
     </ul>
-</aside>
+    </aside>
+</main>
+
 
 <?php
 
