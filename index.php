@@ -4,7 +4,7 @@
 ?>
 
 <main>
-    <div>
+    <div id="title-container">
         <h1>Hora de codar</h1>
         <p>O seu blog de programação</p>
     </div>
